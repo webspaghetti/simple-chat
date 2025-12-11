@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="139.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.webspaghetti.simplechatclient.ChatClientController">
+    <children>
+        <AnchorPane fx:id="chatPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="400.0" visible="false">
+            <children>
+                <TextField fx:id="TextField" layoutX="21.0" layoutY="419.0" onKeyPressed="#checkKeyPress" prefHeight="25.0" prefWidth="310.0" />
+                <Button layoutX="337.0" layoutY="419.0" mnemonicParsing="false" onAction="#sendAction" text="Send" />
+                <TextArea fx:id="messageArea" editable="false" prefHeight="400.0" prefWidth="400.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="infoPane" prefHeight="465.0" prefWidth="400.0">
+            <children>
+                <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="78.0" layoutY="135.0" prefHeight="2.0" prefWidth="245.0" promptText="Username">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="hostnameTextField" alignment="CENTER" layoutX="126.0" layoutY="204.0" promptText="Hostname" />
+                <TextField fx:id="portTextField" alignment="CENTER" layoutX="126.0" layoutY="245.0" promptText="Port" />
+                <Button layoutX="149.0" layoutY="287.0" mnemonicParsing="false" onAction="#connectToChat" text="Connect">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
