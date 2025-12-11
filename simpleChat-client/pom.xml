@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                xyz.webspaghetti.simplechatclient/xyz.webspaghetti.simplechatclient.HelloApplication
+                                xyz.webspaghetti.simplechatclient/xyz.webspaghetti.simplechatclient.ChatClientApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
