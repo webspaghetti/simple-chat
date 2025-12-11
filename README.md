@@ -36,7 +36,7 @@ mvn javafx:run
 ## Usage
 
 1.  Launch the Client application.
-2.  Enter a **Username**.
-3.  Enter the **Hostname** (use `localhost` for local testing).
-4.  Enter **Port** `5000`.
-5.  Click **Connect** and start chatting.
+1.  Enter a **Username**.
+1.  Enter the **Hostname** (use `localhost` for local testing).
+1.  Enter **Port** `5000`.
+1.  Click **Connect** and start chatting.
