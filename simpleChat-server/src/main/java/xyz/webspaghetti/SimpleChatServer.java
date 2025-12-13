@@ -53,7 +53,6 @@ public class SimpleChatServer {
                     distributeMessage(message);
                 }
             } catch (SocketException e) {
-                // This is the exception you are seeing
                 System.err.println("connection with user lost");
             } catch (IOException e) {
                 e.printStackTrace();
